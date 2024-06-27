@@ -37,23 +37,23 @@ struct ButtonProperty {
     }
     
     static let buttonList: [[UIButton]] = [
-        [ButtonProperty("7", .bold, 25, .white, .gray).buttonMake(),
-        ButtonProperty("8", .bold, 25, .white, .gray).buttonMake(),
-        ButtonProperty("9", .bold, 25, .white, .gray).buttonMake(),
+        [ButtonProperty("7", .bold, 25, .white, UIColor(red: 58/255, green: 58/255, blue: 58/255, alpha: 1.0)).buttonMake(),
+        ButtonProperty("8", .bold, 25, .white, UIColor(red: 58/255, green: 58/255, blue: 58/255, alpha: 1.0)).buttonMake(),
+        ButtonProperty("9", .bold, 25, .white, UIColor(red: 58/255, green: 58/255, blue: 58/255, alpha: 1.0)).buttonMake(),
         ButtonProperty("+", .bold, 25, .white, .orange).buttonMake()],
         
-        [ButtonProperty("4", .bold, 25, .white, .gray).buttonMake(),
-        ButtonProperty("5", .bold, 25, .white, .gray).buttonMake(),
-        ButtonProperty("6", .bold, 25, .white, .gray).buttonMake(),
+        [ButtonProperty("4", .bold, 25, .white, UIColor(red: 58/255, green: 58/255, blue: 58/255, alpha: 1.0)).buttonMake(),
+        ButtonProperty("5", .bold, 25, .white, UIColor(red: 58/255, green: 58/255, blue: 58/255, alpha: 1.0)).buttonMake(),
+        ButtonProperty("6", .bold, 25, .white, UIColor(red: 58/255, green: 58/255, blue: 58/255, alpha: 1.0)).buttonMake(),
         ButtonProperty("-", .bold, 25, .white, .orange).buttonMake()],
         
-        [ButtonProperty("1", .bold, 25, .white, .gray).buttonMake(),
-        ButtonProperty("2", .bold, 25, .white, .gray).buttonMake(),
-        ButtonProperty("3", .bold, 25, .white, .gray).buttonMake(),
+        [ButtonProperty("1", .bold, 25, .white, UIColor(red: 58/255, green: 58/255, blue: 58/255, alpha: 1.0)).buttonMake(),
+        ButtonProperty("2", .bold, 25, .white, UIColor(red: 58/255, green: 58/255, blue: 58/255, alpha: 1.0)).buttonMake(),
+        ButtonProperty("3", .bold, 25, .white, UIColor(red: 58/255, green: 58/255, blue: 58/255, alpha: 1.0)).buttonMake(),
          ButtonProperty("*", .bold, 25, .white, .orange).buttonMake()],
         
         [ButtonProperty("AC", .bold, 25, .white, .orange).buttonMake(),
-        ButtonProperty("0", .bold, 25, .white, .gray).buttonMake(),
+        ButtonProperty("0", .bold, 25, .white, UIColor(red: 58/255, green: 58/255, blue: 58/255, alpha: 1.0)).buttonMake(),
         ButtonProperty("=", .bold, 25, .white, .orange).buttonMake(),
          ButtonProperty("/", .bold, 25, .white, .orange).buttonMake()]
 

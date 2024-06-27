@@ -19,7 +19,6 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    
     @IBAction func numberButtonTap(_ sender: Any) {
         // 성공적으로 캐스팅되었을 때 실행되는 코드
         if let button = sender as? UIButton {

@@ -9,6 +9,8 @@ import UIKit
 import SnapKit
 
 class ViewController: UIViewController {
+    var operBool: Bool = false
+    
     let numberLabel: UILabel = {
         let label = UILabel()
         label.text = "0"
@@ -91,6 +93,9 @@ class ViewController: UIViewController {
         if let num = sender.title(for: .normal), let labelTitle = numberLabel.text {
             if labelTitle == "0" {
                 numberLabel.text = num
+            } else if operBool {
+                numberLabel.text = num
+                operBool = false
             } else {
                 numberLabel.text = labelTitle + num
             }
@@ -106,8 +111,10 @@ class ViewController: UIViewController {
                 var str: String = labelTitle
                 str.removeLast()
                 numberLabel.text = str + num
+                operBool = false
             } else {
                 numberLabel.text = labelTitle + num
+                operBool = false
             }
         }
     }
@@ -115,6 +122,7 @@ class ViewController: UIViewController {
     @objc
     func ACButtonTapped(_ sender: UIButton) {
         numberLabel.text = "0"
+        operBool = false
     }
     
     @objc
@@ -125,10 +133,14 @@ class ViewController: UIViewController {
             math.removeLast()
             if let result = calculate(math) {
                 numberLabel.text = "\(result)"
+                operBool = true
             }
+        } else if math == "0" {
+            operBool = false
         } else {
             if let result = calculate(math) {
                 numberLabel.text = "\(result)"
+                operBool = true
             }
         }
     }
